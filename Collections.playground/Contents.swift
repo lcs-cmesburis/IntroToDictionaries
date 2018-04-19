@@ -28,6 +28,7 @@ import Foundation
  */
 // Create the emptry shopping list
 
+var shoppingList : [String] = []
 
 
 /*:
@@ -42,13 +43,16 @@ import Foundation
  Try that code now.
  */
 // Add the first item to the shopping list
-
+shoppingList.append("Six eggs")
 
 /*:
  Now add the remaining four items to the shopping list from the example shown above.
  */
 // Add the remaining items to the shopping list
-
+shoppingList.append("Milk")
+shoppingList.append("Flour")
+shoppingList.append("Baking powder")
+shoppingList.append("Bananas")
 
 /*:
  #### Creating a fixed length array
@@ -62,7 +66,7 @@ import Foundation
  Try this now.
  */
 // Create an array with ten values defaulting to zero
-
+var tenIntegers = Array(repeating: 0, count: 10)
 
 /*:
  
@@ -73,7 +77,8 @@ import Foundation
  
  */
 // Complete the exercises here
-
+var fifteenValues = Array(repeating: 50.0, count: 15)
+var fiveValues = Array(repeating: "A", count: 5)
 
 
 /*:
@@ -103,7 +108,11 @@ import Foundation
  */
 // Create a dictionary to connect airport codes to airport names
 
-
+var airports : [String : String] = [:]
+airports["YYZ"] = "Toronto Pearson"
+airports["LHR"] = "London Heathrow"
+airports["DUB"] = "Dublin Airport"
+print(airports)
 /*:
  **NOTE**
  
@@ -118,7 +127,11 @@ import Foundation
  Why did we get a *nil* value for the key ``AMS``?
 
  */
+print(airports["LHR"])
 
+print(airports["AMS"])
+
+//no value for the Amsertdam airport
 /*:
  #### Applications for dictionaries
  
